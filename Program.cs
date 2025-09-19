@@ -82,7 +82,7 @@ namespace Threads_Homework
             {
                 Console.WriteLine(bank.ToString());
 
-                // имитация изменения свойств (чтобы запустились потоки логирования)
+                
                 bank.Money += 500;
                 bank.Percent += 1;
             }
