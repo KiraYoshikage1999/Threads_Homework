@@ -53,7 +53,7 @@ namespace Threads_Homework
             string text = $"Name: {Name}, Money: {Money}, Percent: {Percent}{Environment.NewLine}";
             byte[] bytes = Encoding.UTF8.GetBytes(text);
 
-            lock (typeof(Bank)) // чтобы потоки не писали одновременно
+            lock (typeof(Bank)) 
             {
                 using (FileStream fs = new FileStream("bank_log.txt", FileMode.Append, FileAccess.Write))
                 {
