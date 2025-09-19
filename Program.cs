@@ -59,7 +59,7 @@ namespace Threads_Homework
 
                 if (answer != "y")
                 {
-                    Console.WriteLine("Дякуємо за гру!");
+                    Console.WriteLine("Thanks for game!");
                     break;
                 }  
             }
